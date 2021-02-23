@@ -1,6 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
+@font-face {
+    font-family: 'apercu';
+    src: url('../webfonts/apercu-webfont.woff2') format('woff2'),
+         url('../webfonts/apercu-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 
+}
 /*
 	Aerial by HTML5 UP
 	html5up.net | @ajlkn
@@ -83,7 +89,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #000;
 		overflow: hidden;
 	}
 
@@ -100,11 +106,11 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 15pt;
-		font-weight: 300 !important;
+		font-family: 'Apercu', sans-serif;
+		font-size: 20pt;
+		font-weight: 500 !important;
 		letter-spacing: -0.025em;
-		line-height: 1.75em;
+		line-height: 1.5em;
 	}
 
 	a {
@@ -207,6 +213,7 @@ input, select, textarea {
 		position: fixed;
 		top: 0;
 		width: 100%;
+        background-color: black;
 	}
 
 /* BG */
@@ -562,16 +569,17 @@ input, select, textarea {
 	}
 
 		#header h1 {
-			font-size: 4.35em;
-			font-weight: 900;
-			letter-spacing: -0.035em;
+			font-size: 3.5em;
+			font-weight: 600;
+			letter-spacing: 0.035em;
 			line-height: 1em;
+            font-family: "Apercu", sans-serif;
 		}
 
 		#header p {
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
-			opacity: 0.75;
+			opacity: 0.9;
 		}
 
 		#header nav {
@@ -675,6 +683,7 @@ input, select, textarea {
 				-webkit-touch-callout: none;
 				border: 0;
 				display: inline-block;
+                
 			}
 
 				#header nav a:before {
@@ -683,15 +692,15 @@ input, select, textarea {
 					-ms-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
 					border-radius: 100%;
-					border: solid 1px #fff;
+					border: solid 2px #fff;
 					display: block;
 					font-size: 1.75em;
-					height: 2.5em;
-					line-height: 2.5em;
+					height: 2em;
+					line-height: 2em;
 					position: relative;
 					text-align: center;
 					top: 0;
-					width: 2.5em;
+					width: 2em;
 				}
 
 				#header nav a:hover {
@@ -991,7 +1000,7 @@ input, select, textarea {
 		}
 
 		#header p {
-			font-size: 1em;
+			font-size: 1.25em;
 		}
 
 		#header nav {
