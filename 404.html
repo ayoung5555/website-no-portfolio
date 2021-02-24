@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<!--
+	boo
+-->
+<html>
+	<head>
+		<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-140920582-2" type="text/javascript"></script>
+        <script type="text/javascript">
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+ 		 gtag('js', new Date());
+ 		 gtag('config', 'UA-140920582-2');
+		</script>
+        <title>404 - Andrew Young</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>whoops.</h1>
+						<p>this page does not exist. <a href="index.html">home.</a></p>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+                        <p>404 error</p>
+					</footer>
+			</div>
+
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+        <script>if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { 
+                    $("#overlay").hide(); 
+                } else {
+                    $("#overlay").show();
+                }
+        </script>
+        <script>$("#wrapper").mousemove(function(e) {
+                parallaxIt(e, "#overlay", -60);
+                parallaxIt(e, "#bg", -30);
+            });
+
+            function parallaxIt(e, target, movement) {
+                var $this = $("#wrapper");
+                var relX = e.pageX - $this.offset().left;
+                var relY = e.pageY - $this.offset().top;
+
+                TweenMax.to(target, 1, {
+                    x: (relX - $this.width() / 2) / $this.width() * movement,
+                    y: (relY - $this.height() / 2) / $this.height() * movement
+                });
+}</script>
+	</body>
+</html>
