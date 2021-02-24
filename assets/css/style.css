@@ -25,10 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-lensstudioiconwhite:before {
+.icon-new-lens-studio-icon:before {
   content: "\e902";
   color: #fff;
-font-weight: 800;
 }
 .icon-envelope:before {
   content: "\e901";
