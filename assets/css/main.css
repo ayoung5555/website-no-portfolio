@@ -133,6 +133,7 @@ input, select, textarea {
 	.icon {
 		text-decoration: none;
 		position: relative;
+        
 	}
 
 		.icon:before {
@@ -146,6 +147,7 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+            
 		}
 
 		.icon > .label {
@@ -154,6 +156,7 @@ input, select, textarea {
 
 		.icon.solid:before {
 			font-weight: 900;
+            
 		}
 
 		.icon.brands:before {
@@ -233,7 +236,7 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #000 url("images/wigglebg.svg") bottom left;
+		background: #000 url("images/squiggle-tall.svg") bottom left;
 		background-repeat: repeat;
 		height: 100%;
 		left: 0;
