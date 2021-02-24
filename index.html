@@ -56,13 +56,13 @@
 		</script>
         <script src=assets/js/jquery.min.js></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-        <script>window.addEventListener("resize", function() {
-                if (window.matchMedia("(min-width: 700px)").matches) {
-    $("#overlay").show();
-  } else {
+        <script>/* window.addEventListener("resize", function() { */
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { /* window.matchMedia("(min-width: 700px)").matches */
     $("#overlay").hide();
-  }
-})
+  } else {
+    $("#overlay").show();
+  }/*
+   }) */
         </script>
         <script>$("#wrapper").mousemove(function(e) {
                 parallaxIt(e, "#overlay", -60);
