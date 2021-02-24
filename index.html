@@ -30,7 +30,7 @@
 						<h1>Andrew Young</h1>
 						<p>student, coder, official lens creator</p>
 						<nav>
-							<ul>
+							<ul id="socials">
 								<li><a href="mailto:andrew@andrewyou.ng?subject=Website Inquiry" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 								<li><a href="https://www.snapchat.com/add/ayoung5555" class="icon brands fa-snapchat-ghost"><span class="label">Add ayoung5555 on Snapchat</span></a></li>
 								<li><a href="https://www.linkedin.com/in/ayoung5555/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -59,8 +59,10 @@
         <script>/* window.addEventListener("resize", function() { */
                 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { /* window.matchMedia("(min-width: 700px)").matches */
     $("#overlay").hide();
+	$('#socials li:contains(Github)').hide();  		
   } else {
     $("#overlay").show();
+	  $('#socials li:contains(Github)').show(); 
   }/*
    }) */
         </script>
