@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'socialicons';
+  src:  url('../webfonts/socialicons.eot');
+  src:  url('../webfonts/socialicons.eot#iefix') format('embedded-opentype'),
+    url('../webfonts/socialicons.ttf?oiz5rg') format('truetype'),
+    url('../webfonts/socialicons.woff?oiz5rg') format('woff'),
+    url('../webfonts/socialicons.svg?oiz5rg#socialicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'socialicons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lensstudioiconwhite:before {
+  content: "\e902";
+  color: #fff;
+font-weight: 800;
+}
+.icon-envelope:before {
+  content: "\e901";
+}
+.icon-snapchat-ghost:before {
+  content: "\e900";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
